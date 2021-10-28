@@ -18,4 +18,3 @@ $.when( $.ready ).then(function() {
 
     $('button').on('click', _.debounce(updateCounter, 500));
 });
-
