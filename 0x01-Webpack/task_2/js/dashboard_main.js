@@ -1,0 +1,23 @@
+import $ from "jquery";
+const _ = require('lodash');
+import '../css/main.css'
+import '../assets/holberton-logo.jpg'
+
+
+$( document ).ready(function() {
+    let count = 0;
+
+    function updateCounter() {
+        count++;
+        $('#count').text(`${count} clicks on the button`);
+    }
+    $('body').append(
+        '<div id="logo"></div>',
+        '<p>Holberton Dashboard</p>',
+        '<p>Dashboard data for the students</p>',
+        '<button>Click here to get started</button>',
+        '<p id=\'count\'></p>',
+        '<p>Copyright - Holberton School</p>'
+    );
+    $('button').on('click', _.debounce(updateCounter, 500));
+});
