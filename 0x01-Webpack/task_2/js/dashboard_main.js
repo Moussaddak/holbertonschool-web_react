@@ -1,16 +1,15 @@
 import $ from "jquery";
+
 const _ = require('lodash');
-import '../css/main.css'
-import '../assets/holberton-logo.jpg'
 
-
-$( document ).ready(function() {
+$(document).ready(function () {
     let count = 0;
 
     function updateCounter() {
         count++;
         $('#count').text(`${count} clicks on the button`);
     }
+
     $('body').append(
         '<div id="logo"></div>',
         '<p>Holberton Dashboard</p>',
