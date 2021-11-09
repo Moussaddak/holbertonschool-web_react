@@ -1,0 +1,40 @@
+:root {
+  --color-holberton-primary: #e0354b;
+
+  --border: solid 3px var(--color-holberton-primary);
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+html, body, #root, .App {
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.App-body {
+  margin: 40px;
+}
+
+
+.form-container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 70%;
+  box-sizing: border-box;
+}
+
+.box {
+  margin-right: 25px;
+
+}
+
