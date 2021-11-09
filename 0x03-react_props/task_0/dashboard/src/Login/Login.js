@@ -1,18 +1,8 @@
-import logo from './Holberton_logo.jpg';
-import './App.css';
-import {getFooterCopy, getFullYear} from './utils'
+import React from "react";
 
-function App() {
+const Login = () => {
     return (
-        <div className="App">
-
-            {/* Header */}
-            <div className="App-header">
-                <img src={logo} alt=""/>
-                <h1>School dashboard</h1>
-            </div>
-
-            {/* Body */}
+        <React.Fragment>
             <div className="App-body">
                 <p>Login to access the full dashboard</p>
 
@@ -28,17 +18,11 @@ function App() {
                         </div>
                     </div>
                     <input type="submit" value="OK"/>
-
                 </form>
             </div>
+        </React.Fragment>
 
-            {/* footer */}
-            <div className="App-footer">
-                <p>Copyright {getFullYear()} - {getFooterCopy()}</p>
-            </div>
-
-        </div>
     );
 }
 
-export default App;
+export default Login;

@@ -20,30 +20,11 @@ html, body, #root, .App {
   display: flex;
   flex-direction: column;
 }
-.App-header {
-  display: flex;
-  align-items: center;
-  border-bottom: var(--border);
-}
-.App-header img {
-  height: 200px;
-}
-.App-header h1 {
-  color: var(--color-holberton-primary);
-}
+
 .App-body {
   margin: 40px;
 }
 
-.App-footer {
-  margin-top: auto;
-  border-top: var(--border);
-}
-
-.App-footer p {
-  text-align: center;
-  font-style: italic;
-}
 
 .form-container {
   display: flex;
